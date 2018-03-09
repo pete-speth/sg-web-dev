@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <title>Home | Pete's Grill</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="restaurantStyles.css" rel="stylesheet" type="text/css"/>
+  <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+  <noscript>
+    <p style="background-color: red;">
+      Warning: You have JavaScript disabled. This may affect the presentation
+      of the site
+    </p>
+  </noscript>
+  <style>
+    #main{
+      background-color: #96AB84;
+    }
+    #homeCarousel{
+      background-color: #8ea2a1;
+      text-align: center;
+      border: solid 1px black;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Pete's Grill</h1>
+  </div>
+  <div class="navigation">
+    <hr/>
+    <ul class="nav nav-tabs">
+      <li class="active">
+        <a class="nav-link" href="index.html"><span class="glyphicon glyphicon-home"></span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="menu.html">Menu</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contactUs.html">Contact Us</a>
+      </li>
+    </ul>
+    <hr/>
+  </div>
+  <div class=".jumbotron" style="text-align: center; background-color: #DAC071;">
+    <h1>New Location Coming Soon!</h1>
+    <p>
+      We are proud to announce that our second location will be opening
+      this April in Mooseburger, Alaska
+    </p>
+  </div>
+  <div id="homeCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="item active">
+        <h1>Mooseburger Location Opening in April</h1>
+        <h3>Be sure to stop by and see us in our new digs!</h3>
+      </div>
+      <div class="item">
+        <h1>New Seasonal Menu Items</h1>
+        <h3>Don't miss these limited-time dishes!</h3>
+      </div>
+      <div class="item">
+        <h1>Drink of the Month: SG Special Brew</h1>
+        <h3>Come in for a cold one!</h3>
+      </div>
+    </div>
+  </div>
+  <div id="main">
+    <div id="image">
+      <img src="images/moose.jpg" alt="Picture of a moose standing in a river"
+      style="display:block; margin-left:auto; margin-right:auto; padding-top:20px;
+       padding-bottom:20px; width:400px; height:150px;"/>
+    </div>
+    <div id="description">
+      <p style="width:400px; margin:auto; border:solid 1px;">
+        Is your stomach grumbling louder than a grizzly? Then come on into to
+        Pete's Grill. Our new menu has something for everybody, and we've been
+        voted best service in Alaska for three years in a row! Located in the
+        heart of Sandwichville, just one mile away from the giant moose statue.
+      </p><br/>
+    </div>
+  </div>
+  <div class="footer">
+    <hr/>
+    <p>1212 Burger Avenue, Sandwichville, Alaska 12345</p>
+    <p>(989) 765-4321</p>
+  </div>
+
+</body>
+</html>

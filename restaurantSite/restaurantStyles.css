@@ -1,0 +1,32 @@
+/*Using palette 2-02 by m2005d on coolourlovers.com
+http://www.colourlovers.com/palette/4558914/2-02*/
+
+.header{
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+.navigation a{
+  font-family: sans-serif;
+  margin-right: 25px
+}
+
+.navigation a:link{
+  color: #7d7c77;
+}
+
+.navigation a:visited{
+  color: #dac071;
+}
+
+.navigation a:hover{
+  font-weight: bold;
+}
+
+.navigation a:active{
+  text-decoration: none;
+}
+
+.footer{
+  text-align: center;
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <title>Contact Us | Pete's Grill</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link href="restaurantStyles.css" rel="stylesheet" type="text/css"/>
+  <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <noscript>
+    <p style="background-color: red;">
+      Warning: You have JavaScript disabled. This may affect the presentation
+      of the site
+    </p>
+  </noscript>
+  <style>
+    .required{
+      font-weight: bold;
+    }
+    .optional{
+      font-weight: normal;
+    }
+    .c1{
+      text-align: right;
+    }
+    .c2{
+      text-align: left;
+    }
+    .c2 label{
+      font-weight: normal;
+    }
+    input, select, textarea{
+      margin-top:10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Pete's Grill</h1>
+  </div>
+  <div class="navigation">
+    <hr/>
+    <ul class="nav nav-tabs">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html"><span class="glyphicon glyphicon-home"></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="menu.html">Menu</a>
+      </li>
+      <li class="active">
+        <a class="nav-link" href="contactUs.html">Contact Us</a>
+      </li>
+    </ul>
+    <hr/>
+  </div>
+  <div id="main">
+    <form>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-6 c1">
+            <label for="name" class="required">Name:</label>
+          </div>
+          <div class="col-xs-6 c2">
+            <input type="text" id="name" name="name" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6 c1">
+            <label for="email" class="required">Email:</label>
+          </div>
+          <div class="col-xs-6 c2">
+            <input type="text" id="email" name="email" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6 c1">
+            <label for="phone" class="required">Phone:</label>
+          </div>
+          <div class="col-xs-6 c2">
+            <input type="text" id="phone" name="phone" required>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6 c1">
+            <label for="reason" class="required">Reason for Inquiry:</label>
+          </div>
+          <div class="col-xs-6 c2">
+            <select id="reason" name="reason" style="width:180px;" required>
+              <option value="catering" selected>Catering</option>
+              <option vale="party">Private Party</option>
+              <option value="feedback">Feedback</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6 c1">
+            <label for="info" class="optional">Additional Information:</label>
+          </div>
+          <div class="col-xs-6 c2">
+            <textarea id="info"></textarea>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6 c1">
+            <label for="beenHere" class="optional">Have you been to the restaurant?</label>
+          </div>
+          <div class="col-xs-6 c2">
+            <input type="radio" id="choice1" name="beenHere" value="no">
+            <label for="choice1">No</label>
+            <input type="radio" id="choice2" name="beenHere" value="Yes" style="margin-left:20px">
+            <label for="choice2">Yes</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6 c1">
+            <label for="days" class="optional">Best days to contact you:</label>
+          </div>
+          <div class="col-xs-6 c2">
+            <input type="checkbox" id="m" name="days" value="m">
+            <label for="m">M</label>
+            <input type="checkbox" id="t" name="days" value="t">
+            <label for="t">T</label>
+            <input type="checkbox" id="w" name="days" value="w">
+            <label for="w">W</label>
+            <input type="checkbox" id="th" name="days" value="th">
+            <label for="th">Th</label>
+            <input type="checkbox" id="f" name="days" value="f">
+            <label for="f">F</label><br/>
+          </div>
+        </div>
+        <div class="row" style="text-align:center;">
+          <input type="submit" name="submit" value="Send Request">
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="footer">
+    <hr/>
+    <p>1212 Burger Avenue, Sandwichville, Alaska 12345</p>
+    <p>(989) 765-4321</p>
+  </div>
+</body>
+</html>

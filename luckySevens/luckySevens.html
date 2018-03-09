@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lucky Sevens</title>
+  <script type="text/javascript" src="luckySevens.js"></script>
+  <style>
+    #results{
+      display: none;
+    }
+    #resultTable{
+      border-collapse: collapse;
+      margin:auto;
+      text-align: left
+    }
+    #resultTable tr:nth-child(even){
+      background-color: LightGray;
+    }
+    #resultTable td{
+      border: solid 2px black;
+    }
+    #resultTable td:nth-child(even){
+      padding: 0 10px;
+    }
+    hr{
+      margin: 10px 30%;
+      border-width: 3px;
+    }
+  </style>
+</head>
+<body style="text-align: center; font-family: arial;">
+  <h1>Lucky Sevens</h1>
+  <form onsubmit="event.preventDefault(); playGame();">
+    <label for="bet">Starting Bet:</label>
+    <span>$<input type="number" id="bet" onchange="updateInput()"
+     style="text-align: right; width: 50px; margin: 0 0 10px 15px"/></span>
+     <br/>
+    <input type="submit" id="playBtn"  value="Play">
+  </form>
+  <div id='results'>
+    <hr/>
+    <table id='resultTable'>
+      <caption style="font-size:20px; font-weight:bold">Results</caption>
+      <tr style="background-color: DarkGray;">
+        <td>Starting Bet</td>
+        <td id=startingBet></td>
+      </tr>
+      <tr>
+        <td>Total Rolls Before Going Broke</td>
+        <td id="rollCount"></td>
+      </tr>
+      <tr>
+        <td>Highest Amount Won</td>
+        <td id="highest"></td>
+      </tr>
+      <tr>
+        <td>Roll Count at Highest Amount Won</td>
+        <td id="highRolls"></td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>
